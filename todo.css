@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* outline: 1px solid red; */
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style-type: none;
+}
+
+body{
+    background-position: auto;
+    background-size: cover;
+}
+
+.on {
+    display: none;
+}
+
+.hidden {
+    opacity: 0;
+    transition: all 0.3s;
+    transition-delay: 1.5s;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+}
+
+/* alert */
+.alert,#welcome,.login{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 5;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login{
+    z-index: 99;
+}
+.login_form{
+    padding: 40px 30px;
+    width: 500px;
+    height: 100px;
+    text-align: center;
+}
+
+.main,.todo_form>input{
+    position: relative;
+    z-index: 999;
+}
+
+.wtd{
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.37);
+}
+
+.todo_list{
+    width: 300px;
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.todo_list li{
+    padding: 3px 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.todo_list li span {
+    margin: 0 10px;
+}
+
+.todo_list li button {
+   align-self: flex-end;
+}
+
+.todo_form > input{
+    width: 300px;
+    padding: 10px 5px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: none;
+    /* height: 300px; */
+}
+
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container span:nth-child(2){
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    margin: 0 10px;
+}
+
+.container span:nth-child(3){
+    font-size: 20px;
+    background-image: url(../);
+}
+
+#weather{
+    position: absolute;
+    right: 30px;
+    top: 10px;
+}
+
+
+
