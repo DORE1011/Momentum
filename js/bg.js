@@ -14,7 +14,7 @@ const bgColor = document.querySelector("body");
 function chaangeBgColor() {
     const chosenImage = images[Math.floor(Math.random() * images.length)];
 
-    bgColor.style.background= `url(./img/${chosenImage})`;
+    bgColor.style.background= `url(./img/${chosenImage}) no-repeat center / cover`;
     console.log(chosenImage);
 }
 

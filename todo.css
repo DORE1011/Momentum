@@ -91,9 +91,12 @@ body{
 
 .todo_list li{
     padding: 3px 0;
-    display: flex;
-    align-items: center;
     width: 100%;
+}
+.todo_list li::after{
+content: "";
+display: block;
+clear: both;
 }
 
 .todo_list li span {
@@ -101,7 +104,9 @@ body{
 }
 
 .todo_list li button {
-   align-self: flex-end;
+   padding: 0 5px;
+   margin-right: 5px;
+   float: right;
 }
 
 .todo_form > input{
@@ -130,7 +135,7 @@ body{
 
 .container span:nth-child(3){
     font-size: 20px;
-    background-image: url(../);
+
 }
 
 #weather{

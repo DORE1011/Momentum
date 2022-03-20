@@ -17,9 +17,8 @@ function GeoOk(position){
 }
 
 function GeoError(){
-    // error.classList.remove("on");
     alert("Can't find you.");
 
 }
 
-navigator.geolocation.getCurrentPosition(GeoOk, GeoError)
+navigator.geolocation.getCurrentPosition(GeoOk, GeoError);
